@@ -29,11 +29,33 @@
   .note { margin-top:10px; font-size:12px; color:var(--muted); }
   .bad { color:#b91c1c; }
   .good { color:#047857; }
+  .hero {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 720px;
+    padding: 0 16px;
+  }
+  .hero h1 {
+    font-size: 2.2em;
+    margin-bottom: 12px;
+    color: #111;
+  }
+  .hero .tagline {
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #444;
+  }  
 </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>Deterministic Site Password</h1>
+  <header class="hero">
+  <h1>Hashpass</h1>
+  <p class="tagline">
+    Hashpass generates strong, unique passwords for every website using your master password and the site’s domain.
+    Nothing is ever stored or sent anywhere — everything is calculated locally in your browser.
+  </p>
+  </header>
   <div class="card">
     <div class="grid">
       <div>
