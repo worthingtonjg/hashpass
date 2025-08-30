@@ -292,11 +292,6 @@ function onSavePrefs() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // If the site is served under a domain, prefill that as a convenience
-  $("#domain").value = location.hostname && location.hostname !== "localhost"
-    ? normalizeDomain(location.href)
-    : "";
-
   populateFromPrefs();
 
   $("#generate").addEventListener("click", onGenerate);
